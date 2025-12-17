@@ -1,0 +1,41 @@
+---
+title: "Scoobydoo"
+author: "Snehal A"
+date: "2025-12-16"
+output: html_document
+---
+Project Overview
+
+This problem set analyzes IMDb ratings of Scooby-Doo episodes to understand how ratings vary across episode formats and television networks.
+Problem 1: How have IMDb ratings changed over time?
+Interpretation:
+IMDb ratings show variability across years, with certain formats clustering at higher ratings.
+Problem 2: Should all episode formats be analyzed together?
+Interpretation:
+Movies and crossover episodes differ from standard TV episodes and were excluded to ensure fair comparisons.
+Problem 3: Do IMDb ratings differ by network?
+Interpretation:
+ANOVA was used to test whether average IMDb ratings differ across networks. Post-hoc testing identified specific network differences.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
